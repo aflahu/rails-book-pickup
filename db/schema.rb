@@ -13,6 +13,7 @@
 ActiveRecord::Schema[7.0].define(version: 2022_09_08_164509) do
   create_table "pickups", force: :cascade do |t|
     t.string "work_key"
+    t.datetime "borrow_schedule"
     t.datetime "pickup_schedule"
     t.string "name"
     t.string "phone_number"

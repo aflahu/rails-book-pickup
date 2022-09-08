@@ -7,7 +7,8 @@ class PickupsController < ApplicationController
     pickup = Pickup.new
 
     pickup.work_key = params[:work_key]
-    pickup.pickup_schedule = params[:pickup_schedule]
+    pickup.borrow_schedule = params[:borrow_schedule]
+    pickup.pickup_schedule = params[:borrow_schedule].to_datetime + 7.days
     pickup.name = params[:name]
     pickup.phone_number = params[:phone_number]
 
