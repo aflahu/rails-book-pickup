@@ -11,7 +11,7 @@ class PickupsController < ApplicationController
     pickup.name = params[:name]
     pickup.phone_number = params[:phone_number]
 
-    if pickup.save?
+    if pickup.save
       render json: { data: pickup }, status: :created
     else
       render json: nil, status: :bad_request

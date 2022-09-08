@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   # root "articles#index"
   scope :api do
     scope :v1 do
-      resources :pickups, only: [:index]
+      resources :pickups, only: %i[index create]
       resources :books, only: [:index]
     end
   end

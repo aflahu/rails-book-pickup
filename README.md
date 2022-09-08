@@ -5,6 +5,9 @@
 ## Set up database
 - `bundle exec rake db:reset`
 
-## Run servers
+## Run server
 - Run backend server: `rails s`
-- After both servers are fully loaded. Open http://localhost:3000/ in a browser.
+- Open http://localhost:3000/ in a browser.
+
+## Test server
+- `rails test`
