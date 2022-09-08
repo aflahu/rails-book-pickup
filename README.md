@@ -11,3 +11,8 @@
 
 ## Test server
 - `rails test`
+
+## Enpoint list
+- get `/api/v1/books?subject=data`
+- get `/api/v1/pickups`
+- post `/api/v1/pickups`, json, body:  `{ work_key: '/works/OL65487W', pickup_schedule: DateTime.new, name: 'erka', phone_number: '0812323123' }`
